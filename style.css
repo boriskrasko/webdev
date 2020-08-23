@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,11 +18,9 @@ h1 {
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
-  /* identical to box height */
   letter-spacing: 4.5px;
   text-transform: uppercase;
   white-space: nowrap;
-
   color: #FFFFFF;
 }
 
@@ -35,18 +33,14 @@ li {
   display: block;
 }
 
-
-/************************** Header ***********************************/
-
 header {
   position: absolute;
   width: 1600px;
   height: 95px;
-  top: 0px;
+  top: 0;
   z-index: 1;
 }
 
-/****** Logo *****/
 .logo {
   position: absolute;
   width: 44px;
@@ -56,20 +50,15 @@ header {
   cursor: pointer;
 }
 
-/***** Navigation Menu *****/
-
 header nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 145%;
-  /* identical to box height, or 20px */
   display: flex;
   align-items: center;
-
   color: #FFFFFF;
-
   opacity: 0.8;
   text-decoration: none;
 }
@@ -79,39 +68,35 @@ header nav ul li a:hover {
   border-bottom: 1px solid #FFF;
 }
 
-/* About */
 #nav-item-1 {
   position: absolute;
   width: 38px;
   height: 21px;
-  left: calc(50% - 38px/2 - 279px);
+  left: calc(50% - 38px / 2 - 279px);
   top: 38px;
 }
 
-/* Syllabus */
 #nav-item-2 {
   position: absolute;
   width: 53px;
   height: 20px;
-  left: calc(50% - 53px/2 - 148.5px);
+  left: calc(50% - 53px / 2 - 148.5px);
   top: 38px;
 }
 
-/* Projects */
 #nav-item-3 {
   position: absolute;
   width: 52px;
   height: 20px;
-  left: calc(50% - 52px/2 + 149px);
+  left: calc(50% - 52px / 2 + 149px);
   top: 38px;
 }
 
-/* FAQ */
 #nav-item-4 {
   position: absolute;
   width: 26px;
   height: 20px;
-  left: calc(50% - 26px/2 + 271px);
+  left: calc(50% - 26px / 2 + 271px);
   top: 38px;
 }
 
@@ -119,10 +104,6 @@ header nav ul li a:hover {
   font-weight: 600;
   border-bottom: 1px solid white;
 }
-
-
-
-/******************************** 1st block *****************************/
 
 .your-life {
   position: relative;
@@ -134,30 +115,25 @@ header nav ul li a:hover {
   background-image: url(assets/img/bg-image.png);
 }
 
-
 .your-life p {
   position: absolute;
   width: 504px;
   height: 50px;
   left: 548px;
   top: 326px;
-
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18.0px;
   line-height: 140%;
-  /* or 25px */
   text-align: center;
   color: #FFFFFF;
 }
 
 .your-life button {
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   padding: 14px 47px;
-
   position: absolute;
   width: 184px;
   height: 46px;
@@ -166,7 +142,6 @@ header nav ul li a:hover {
   background: #00AFDB;
   border: none;
   cursor: pointer;
-
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -174,15 +149,12 @@ header nav ul li a:hover {
   text-transform: uppercase;
   line-height: 132%;
   white-space: nowrap;
-  /* or 25px */
   text-align: center;
   color: #FFFFFF;
 }
 
 .btn:hover {
-  /*transform: scale(0.98);
-  box-shadow: 0px 2px 5px #888;*/
-  transition: .2s;
+  transition: 0.2s;
   background: #009CC2;
 }
 
@@ -201,12 +173,8 @@ header nav ul li a:hover {
 
 .socials ul li:hover {
   transform: scale(1.4);
-  transition: .1s;
+  transition: 0.1s;
 }
-
-
-/******************************** 2nd block *****************************/
-
 
 .rappresent {
   position: relative;
@@ -229,9 +197,9 @@ header nav ul li a:hover {
   height: 233px;
   left: 268px;
   top: 295px;
-
 }
- .content-block h2 {
+
+.content-block h2 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -246,14 +214,13 @@ header nav ul li a:hover {
 
 .content-block p {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 77px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 145%;
-  /* or 20px */
   color: #4E4E4E;
 }
 
@@ -261,15 +228,13 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: row;
   padding: 14px 47px;
-
   position: absolute;
   width: 184px;
   height: 46px;
-  left: 0px;
+  left: 0;
   top: 187px;
   border: none;
   cursor: pointer;
-
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -277,17 +242,10 @@ header nav ul li a:hover {
   text-transform: uppercase;
   line-height: 132%;
   white-space: nowrap;
-  /* or 25px */
   text-align: center;
   color: #FFFFFF;
-
   background: #00AFDB;
 }
-
-
-
-/******************************** 3th block *****************************/
-
 
 .our-community {
   position: relative;
@@ -302,20 +260,16 @@ header nav ul li a:hover {
   position: absolute;
   width: 298px;
   height: 80px;
-  left: calc(50% - 298px/2);
+  left: calc(50% - 298px / 2);
   top: 95px;
-
-  /* body-14-reg */
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 145%;
-  /* or 20px */
   display: flex;
   align-items: flex-end;
   text-align: center;
-
   color: #4E4E4E;
 }
 
@@ -336,28 +290,25 @@ header nav ul li a:hover {
 }
 
 .content-block-2 h2 {
- position: absolute;
- width: 160px;
- height: 20px;
- left: calc(50% - 160px/2);
- top: 65px;
-
- /* h3-16-upper-bold */
- font-family: Roboto, sans-serif;
- font-style: normal;
- font-weight: 500;
- font-size: 16px;
- line-height: 20px;
- /* identical to box height, or 125% */
- display: flex;
- align-items: center;
- text-align: center;
- letter-spacing: 2.4px;
- text-transform: uppercase;
- white-space: nowrap;
-
- color: #373737;
+  position: absolute;
+  width: 160px;
+  height: 20px;
+  left: calc(50% - 160px / 2);
+  top: 65px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #373737;
 }
+
 .nav-items {
   position: absolute;
   width: 79px;
@@ -365,6 +316,7 @@ header nav ul li a:hover {
   left: 1252px;
   top: 80px;
 }
+
 #prew {
   position: relative;
   left: -2px;
@@ -374,7 +326,7 @@ header nav ul li a:hover {
 }
 
 #prew:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #next {
@@ -386,32 +338,29 @@ header nav ul li a:hover {
 }
 
 #next:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .count-slider-items {
   position: absolute;
   width: 37px;
   height: 25px;
-  left: calc(50% - 37px/2);
-  top: calc(50% - 25px/2 - 0.5px);
-
+  left: calc(50% - 37px / 2);
+  top: calc(50% - 25px / 2 - 0.5px);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
-
-  /* or 25px */
   display: flex;
   align-items: center;
   text-align: center;
   color: #373737;
 }
+
 .count-slider-items span {
   padding-right: 4.4px;
 }
-
 
 .slider-items {
   position: absolute;
@@ -431,13 +380,12 @@ header nav ul li a:hover {
   float: left;
 }
 
-/* slider image items */
 #item1 {
   position: absolute;
   width: 407px;
   height: 244px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background-color: rgb(196, 196, 196);
 }
 
@@ -446,7 +394,7 @@ header nav ul li a:hover {
   width: 407px;
   height: 244px;
   left: 437px;
-  top: 0px;
+  top: 0;
   background-color: rgb(196, 196, 196);
 }
 
@@ -455,12 +403,9 @@ header nav ul li a:hover {
   width: 407px;
   height: 244px;
   left: 874px;
-  top: 0px;
+  top: 0;
   background-color: rgb(196, 196, 196);
 }
-
-/******************************** Implement block *****************************/
-
 
 .implement {
   position: relative;
@@ -495,7 +440,6 @@ header nav ul li a:hover {
   align-items: flex-end;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #373737;
 }
 
@@ -506,7 +450,6 @@ header nav ul li a:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 145%;
-  /* or 20px */
   color: #4E4E4E;
 }
 
@@ -514,16 +457,14 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: row;
   padding: 14px 47px;
-
   position: absolute;
   width: 180px;
   height: 46px;
   top: 138px;
-  left: 0px;
+  left: 0;
   background: #00AFDB;
   border: none;
   cursor: pointer;
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -531,14 +472,9 @@ header nav ul li a:hover {
   text-transform: uppercase;
   line-height: 132%;
   white-space: nowrap;
-  /* or 25px */
   text-align: center;
   color: #FFFFFF;
 }
-
-
-/******************************** Subscribe block *****************************/
-
 
 .subscribe {
   position: relative;
@@ -568,7 +504,6 @@ header nav ul li a:hover {
   align-items: flex-end;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #FFFFFF;
 }
 
@@ -576,14 +511,13 @@ header nav ul li a:hover {
   position: absolute;
   width: 316px;
   height: 46px;
-  left: 0px;
+  left: 0;
   top: 58px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  /* identical to box height, or 20px */
   display: flex;
   align-items: flex-end;
   padding-left: 24px;
@@ -604,10 +538,6 @@ header nav ul li a:hover {
   opacity: 0;
 }
 
-
-/******************************** Subscribe block *****************************/
-
-
 .download-app {
   position: relative;
   width: 1600px;
@@ -621,8 +551,6 @@ header nav ul li a:hover {
   position: relative;
   left: 675px;
   top: 120px;
-
-  /* h2-24-bold */
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -633,7 +561,6 @@ header nav ul li a:hover {
   text-align: center;
   letter-spacing: 1.05px;
   text-transform: uppercase;
-
   color: #373737;
 }
 
@@ -642,18 +569,14 @@ header nav ul li a:hover {
   width: 483px;
   left: 559px;
   top: 140px;
-
-  /* body-14-reg */
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 145%;
-  /* or 20px */
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #4E4E4E;
 }
 
@@ -683,13 +606,11 @@ header nav ul li a:hover {
   opacity: 0;
 }
 
-
 footer {
   position: relative;
   width: 1600px;
   height: 184px;
   margin: 0 auto;
-
   background: #000000;
 }
 
@@ -700,7 +621,6 @@ footer {
   left: 160px;
   top: 73px;
 }
-
 
 .additional-nav li {
   display: inline-block;
@@ -714,7 +634,6 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  /* identical to box height, or 20px */
   color: #FFFFFF;
   opacity: 0.98;
   text-decoration: none;
@@ -725,16 +644,13 @@ footer {
   border-bottom: 1px solid #FFF;
 }
 
-/* mnu-items-divider */
 .divider {
-
   position: relative;
   width: 6px;
-  height: 0px;
+  height: 0;
   left: 61px;
   margin-top: -10px;
-
-  border: 1px solid #4E4E4E;
+  border: #4E4E4E solid 1px;
   transform: rotate(-90deg);
 }
 
@@ -752,15 +668,11 @@ footer {
   height: 20px;
   left: 1110px;
   top: 0;
-
-  /* body-14-reg */
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  /* identical to box height, or 20px */
   white-space: nowrap;
-
   color: #818181;
 }
