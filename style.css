@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 1600px;
+}
 
 h1 {
   position: absolute;
-  top: 230px;
-  left: 420px;
-  font-family: Roboto, sans-serif;
+  left: 434px;
+  top: 231px;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -18,12 +21,14 @@ h1 {
   text-align: center;
   letter-spacing: 4.5px;
   text-transform: uppercase;
+  white-space: nowrap;
 
   color: #FFFFFF;
 }
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 
@@ -90,17 +95,17 @@ button {
   left: 548px;
   top: 326px;
 
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 140%;
+  line-height: 145%;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
 }
-.your-life button {
 
+.your-life button {
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -115,11 +120,14 @@ button {
   border: none;
   cursor: pointer;
 
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 0.78px;
+  line-height: 132%;
+  white-space: nowrap;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
@@ -142,7 +150,7 @@ button {
 
 .socials ul li {
   display: inline-flex;
-  margin-right: 25px;
+  margin-right: 26px;
 }
 
 .socials ul li:hover {
@@ -197,7 +205,7 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   /* or 20px */
   color: #4E4E4E;
 }
@@ -215,11 +223,14 @@ button {
   border: none;
   cursor: pointer;
 
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 0.78px;
+  line-height: 132%;
+  white-space: nowrap;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
@@ -234,6 +245,7 @@ button {
   left: 0px;
   top: 1586px;
   text-align: center;
+  background: #F5F6F7;
 }
 
 .our-community p {
@@ -248,7 +260,7 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   /* or 20px */
   display: flex;
   align-items: flex-end;
@@ -415,12 +427,12 @@ button {
 }
 
 .content-block-3 p {
-  margin-top: 48px;
+  margin-top: 20px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   /* or 20px */
   color: #4E4E4E;
 }
@@ -431,9 +443,10 @@ button {
   padding: 15px 47px;
 
   position: absolute;
-  width: 184px;
+  width: 182px;
   height: 46px;
-  top: 160px;
+  top: 139px;
+  left: 0px;
   background: #00AFDB;
   border: none;
   cursor: pointer;
@@ -441,8 +454,11 @@ button {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 0.77px;
+  line-height: 132%;
+  white-space: nowrap;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
@@ -466,7 +482,8 @@ button {
 }
 
 .sign-up h2 {
-  font-family: Roboto, sans-serif;
+  margin-left: 13px;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -504,4 +521,127 @@ button {
   height: 46px;
   left: 340px;
   top: 58px;
+}
+
+.download-app {
+  position: absolute;
+  width: 1600px;
+  height: 468px;
+  left: 0px;
+  top: 3530px;
+}
+
+.download-app h2 {
+  position: relative;
+  left: 675px;
+  top: 120px;
+
+  /* h2-24-bold */
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #373737;
+}
+
+.download-app p {
+  position: relative;
+  width: 483px;
+  left: 559px;
+  top: 168px;
+
+  /* body-14-reg */
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #4E4E4E;
+}
+
+.btn-store {
+  width: 188px;
+  height: 50px;
+  margin-left: 597px;
+  margin-top: 208px;
+}
+
+.btn-market {
+  width: 188px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+footer {
+  position: absolute;
+  width: 1600px;
+  height: 184px;
+  left: 0px;
+  top: 3998px;
+
+  background: #000000;
+}
+
+.additional-nav {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  left: 160px;
+  top: 73px;
+}
+
+
+.additional-nav li {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  color: #FFFFFF;
+  opacity: 0.98;
+  display: inline-block;
+  margin-right: 16px;
+  padding-left: 20px;
+  border-left: 1px solid gray;
+
+}
+
+.basement-logo {
+  position: absolute;
+  width: 44px;
+  height: 45px;
+  left: 618px;
+  top: -15px;
+}
+
+.copyright {
+  position: absolute;
+  width: 170px;
+  height: 20px;
+  left: 1110px;
+  top: 0;
+
+  /* body-14-reg */
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  white-space: nowrap;
+
+  color: #818181;
 }
