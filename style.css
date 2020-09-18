@@ -1,0 +1,507 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 230px;
+  left: 420px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+button {
+  border: none;
+}
+
+
+/* 1st block */
+
+.your-life {
+  position: relative;
+  width: 1600px;
+  height: 744px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(img/bg-image.png);
+}
+
+.your-life header {
+  position: absolute;
+  width: 1600px;
+  height: 95px;
+  left: 0px;
+  top: 0px;
+}
+.your-life nav ul {
+  display: inline-flex;
+  margin-left: 422px;
+}
+
+.your-life nav ul li a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.your-life nav ul li a:hover {
+  color: #27a3c2;
+}
+
+.your-life nav ul li a img:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+.your-life nav ul li a img {
+  position: absolute;
+  width: 44px;
+  height: 45px;
+  left: 778px;
+  top: 25px;
+}
+
+.your-life p {
+  position: absolute;
+  width: 504px;
+  height: 50px;
+  left: 548px;
+  top: 326px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  text-align: center;
+  color: #FFFFFF;
+}
+.your-life button {
+
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  padding: 15px 47px;
+
+  position: absolute;
+  width: 184px;
+  height: 46px;
+  left: 707px;
+  top: 406px;
+  background: #00AFDB;
+  border: none;
+  cursor: pointer;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  /* or 25px */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.your-life button:hover {
+  background: #dbaf00;
+  color: #212121;
+  transition: .2s;
+
+}
+
+.socials {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: 715px;
+  top: 635px;
+}
+
+.socials ul li {
+  display: inline-flex;
+  margin-right: 25px;
+}
+
+.socials ul li:hover {
+  transform: scale(1.4);
+  transition: .1s;
+}
+
+
+/* Rappresent  2st block */
+
+.rappresent {
+  position: absolute;
+  width: 1600px;
+  height: 842px;
+  left: 0px;
+  top: 744px;
+}
+.rappresent img {
+  position: absolute;
+  width: 407px;
+  height: 582px;
+  left: 923px;
+  top: 120px;
+}
+
+.content-block {
+  position: absolute;
+  width: 407px;
+  height: 233px;
+  left: 268px;
+  top: 295px;
+
+}
+ .content-block h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.content-block p {
+  position: absolute;
+  left: 0px;
+  top: 77px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  color: #4E4E4E;
+}
+
+.content-block button {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 47px;
+
+  position: absolute;
+  width: 184px;
+  height: 46px;
+  left: 0px;
+  top: 187px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  /* or 25px */
+  text-align: center;
+  color: #FFFFFF;
+
+  background: #00AFDB;
+}
+
+.our-community {
+  position: absolute;
+  width: 1600px;
+  height: 504px;
+  left: 0px;
+  top: 1586px;
+  text-align: center;
+}
+
+.our-community p {
+  position: absolute;
+  width: 298px;
+  height: 80px;
+  left: calc(50% - 298px/2);
+  top: 95px;
+
+  /* body-14-reg */
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #4E4E4E;
+}
+
+.content-block-2 {
+  position: absolute;
+  width: 298px;
+  height: 175px;
+  left: 269px;
+  top: 155px;
+}
+
+.content-block-2 img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.content-block-2 h2 {
+ position: absolute;
+ width: 160px;
+ height: 20px;
+ left: calc(50% - 160px/2);
+ top: 65px;
+
+ /* h3-16-upper-bold */
+ font-family: Roboto, sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 20px;
+ /* identical to box height, or 125% */
+ display: flex;
+ align-items: center;
+ text-align: center;
+ letter-spacing: 2.4px;
+ text-transform: uppercase;
+ white-space: nowrap;
+
+ color: #373737;
+}
+.nav-items {
+  position: absolute;
+  width: 79px;
+  height: 20px;
+  left: 1252px;
+  top: 80px;
+}
+#prew {
+  float: left;
+  background: transparent;
+  margin-top: 2px;
+}
+
+#next {
+  float: right;
+  transform: rotate(180deg);
+  background: transparent;
+}
+
+.count-slider-items {
+  position: absolute;
+  width: 37px;
+  height: 25px;
+  left: calc(50% - 37px/2);
+  top: calc(50% - 25px/2 - 0.5px);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #373737;
+}
+
+.slider-items {
+  position: absolute;
+  width: 894px;
+  height: 244px;
+  left: 706px;
+  top: 120px;
+  overflow: hidden;
+}
+
+.slider-items div {
+  width: 407px;
+  height: 244px;
+}
+
+.slider-items img {
+  float: left;
+}
+
+#item1 {
+  position: absolute;
+  width: 407px;
+  height: 244px;
+  left: 0px;
+  top: 0px;
+}
+
+#item2 {
+  position: absolute;
+  width: 407px;
+  height: 244px;
+  left: 437px;
+  top: 0px;
+}
+
+#item3 {
+  position: absolute;
+  width: 407px;
+  height: 244px;
+  left: 874px;
+  top: 0px;
+}
+
+/* Implement */
+
+.implement {
+  position: absolute;
+  width: 1600px;
+  height: 842px;
+  left: 0px;
+  top: 2090px;
+}
+
+.implement img {
+  position: absolute;
+  width: 407px;
+  height: 582px;
+  left: 269px;
+  top: 120px;
+}
+
+.content-block-3 {
+  position: absolute;
+  width: 407px;
+  height: 184px;
+  left: 815px;
+  top: 319px;
+}
+
+.content-block-3 h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #373737;
+}
+
+.content-block-3 p {
+  margin-top: 48px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  color: #4E4E4E;
+}
+
+.content-block-3 button {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 47px;
+
+  position: absolute;
+  width: 184px;
+  height: 46px;
+  top: 160px;
+  background: #00AFDB;
+  border: none;
+  cursor: pointer;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  /* or 25px */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  position: absolute;
+  width: 1600px;
+  height: 598px;
+  left: 0px;
+  top: 2932px;
+  background-image: url(img/pexels-christina-morillo.png);
+}
+
+.sign-up {
+  position: absolute;
+  width: 406px;
+  height: 104px;
+  left: 597px;
+  top: 217px;
+}
+
+.sign-up h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.sign-up input {
+  position: absolute;
+  width: 316px;
+  height: 46px;
+  left: 0px;
+  top: 58px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  display: flex;
+  align-items: flex-end;
+  padding-left: 24px;
+  color: #373737;
+  border: none;
+}
+
+.btn-submit {
+  position: absolute;
+  width: 66px;
+  height: 46px;
+  left: 340px;
+  top: 58px;
+}
