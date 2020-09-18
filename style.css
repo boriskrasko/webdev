@@ -35,7 +35,7 @@ button {
   height: 744px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(img/bg-image.png);
+  background-image: url(assets/img/bg-image.png);
 }
 
 .your-life header {
@@ -454,7 +454,7 @@ button {
   height: 598px;
   left: 0px;
   top: 2932px;
-  background-image: url(img/pexels-christina-morillo.png);
+  background-image: url(assets/img/pexels-christina-morillo.png);
 }
 
 .sign-up {
