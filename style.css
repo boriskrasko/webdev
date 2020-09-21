@@ -2,23 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   max-width: 1600px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 h1 {
   position: absolute;
-  left: 434px;
+  left: 435px;
   top: 231px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
   /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 4.5px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -31,8 +29,104 @@ button {
   cursor: pointer;
 }
 
+li {
+  display: block;
+}
 
-/* 1st block */
+
+/************************** Header ***********************************/
+
+header {
+  position: absolute;
+  width: 1600px;
+  height: 95px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+/****** Logo *****/
+.logo {
+  position: absolute;
+  width: 44px;
+  height: 45px;
+  left: 778px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+/***** Navigation Menu *****/
+
+header nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  /* identical to box height, or 20px */
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #27a3c2;
+  border-bottom: 1px solid #FFF;
+}
+
+/* About */
+#nav-item-1 {
+  position: absolute;
+  width: 38px;
+  height: 21px;
+  left: calc(50% - 38px/2 - 279px);
+  top: 38px;
+}
+
+/* Syllabus */
+#nav-item-2 {
+  position: absolute;
+  width: 53px;
+  height: 20px;
+  left: calc(50% - 53px/2 - 148.5px);
+  top: 38px;
+}
+
+/* Projects */
+#nav-item-3 {
+  position: absolute;
+  width: 52px;
+  height: 20px;
+  left: calc(50% - 52px/2 + 149px);
+  top: 38px;
+}
+
+/* FAQ */
+#nav-item-4 {
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  left: calc(50% - 26px/2 + 271px);
+  top: 38px;
+}
+
+.active {
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+
+
+/******************************** 1st block *****************************/
 
 .your-life {
   position: relative;
@@ -40,53 +134,13 @@ button {
   height: 744px;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgb(153, 153, 153);
   background-image: url(assets/img/bg-image.png);
 }
 
-.your-life header {
-  position: absolute;
-  width: 1600px;
-  height: 95px;
-  left: 0px;
-  top: 0px;
-}
-.your-life nav ul {
-  display: inline-flex;
-  margin-left: 422px;
-}
 
-.your-life nav ul li a {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  /* identical to box height, or 20px */
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  opacity: 0.8;
-  text-decoration: none;
-  margin-left: 100px;
-  margin-top: 40px;
-}
 
-.your-life nav ul li a:hover {
-  color: #27a3c2;
-}
 
-.your-life nav ul li a img:hover {
-  transform: scale(1.1);
-  transition: .4s;
-}
-
-.your-life nav ul li a img {
-  position: absolute;
-  width: 44px;
-  height: 45px;
-  left: 778px;
-  top: 25px;
-}
 
 .your-life p {
   position: absolute;
@@ -98,8 +152,8 @@ button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 145%;
+  font-size: 18.0px;
+  line-height: 140%;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
@@ -133,11 +187,11 @@ button {
   color: #FFFFFF;
 }
 
-.your-life button:hover {
-  background: #dbaf00;
-  color: #212121;
+.btn:hover {
+  /*transform: scale(0.98);
+  box-shadow: 0px 2px 5px #888;*/
+  background: #009CC2;
   transition: .2s;
-
 }
 
 .socials {
@@ -189,7 +243,7 @@ button {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
   display: flex;
   align-items: flex-end;
   letter-spacing: 1px;
@@ -281,6 +335,8 @@ button {
   width: 45px;
   height: 45px;
   text-align: center;
+  background-color: #bbb;
+  border-radius: 50%;
 }
 
 .content-block-2 h2 {
@@ -314,12 +370,16 @@ button {
   top: 80px;
 }
 #prew {
+  position: relative;
+  left: -2px;
+  margin-top: 3px;
   float: left;
   background: transparent;
-  margin-top: 2px;
 }
 
 #next {
+  position: relative;
+  margin-right: -2px;
   float: right;
   transform: rotate(180deg);
   background: transparent;
@@ -337,12 +397,17 @@ button {
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
+
   /* or 25px */
   display: flex;
   align-items: center;
   text-align: center;
   color: #373737;
 }
+.count-slider-items span {
+  padding-right: 4.4px;
+}
+
 
 .slider-items {
   position: absolute;
@@ -362,12 +427,14 @@ button {
   float: left;
 }
 
+/* slider image items */
 #item1 {
   position: absolute;
   width: 407px;
   height: 244px;
   left: 0px;
   top: 0px;
+  background-color: rgb(196, 196, 196);
 }
 
 #item2 {
@@ -376,6 +443,7 @@ button {
   height: 244px;
   left: 437px;
   top: 0px;
+  background-color: rgb(196, 196, 196);
 }
 
 #item3 {
@@ -384,6 +452,7 @@ button {
   height: 244px;
   left: 874px;
   top: 0px;
+  background-color: rgb(196, 196, 196);
 }
 
 /* Implement */
@@ -443,9 +512,9 @@ button {
   padding: 15px 47px;
 
   position: absolute;
-  width: 182px;
+  width: 180px;
   height: 46px;
-  top: 139px;
+  top: 138px;
   left: 0px;
   background: #00AFDB;
   border: none;
@@ -456,8 +525,8 @@ button {
   font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.77px;
-  line-height: 132%;
+  letter-spacing: 0.7px;
+  line-height: 145%;
   white-space: nowrap;
   /* or 25px */
   text-align: center;
@@ -470,6 +539,7 @@ button {
   height: 598px;
   left: 0px;
   top: 2932px;
+  background-color: rgb(102, 102, 102);
   background-image: url(assets/img/pexels-christina-morillo.png);
 }
 
@@ -521,7 +591,13 @@ button {
   height: 46px;
   left: 340px;
   top: 58px;
+  background-image: url(assets/svg/btn-submit.svg);
 }
+
+.btn-submit:hover {
+  background-image: url(assets/svg/btn-submit-hover.svg);
+}
+
 
 .download-app {
   position: absolute;
@@ -529,6 +605,8 @@ button {
   height: 468px;
   left: 0px;
   top: 3530px;
+  background: #F5F6F7;
+  overflow: hidden;
 }
 
 .download-app h2 {
@@ -545,7 +623,7 @@ button {
   display: flex;
   align-items: flex-end;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 1.05px;
   text-transform: uppercase;
 
   color: #373737;
@@ -555,14 +633,14 @@ button {
   position: relative;
   width: 483px;
   left: 559px;
-  top: 168px;
+  top: 140px;
 
   /* body-14-reg */
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   /* or 20px */
   display: flex;
   align-items: center;
@@ -572,16 +650,21 @@ button {
 }
 
 .btn-store {
+  position: absolute;
   width: 188px;
   height: 50px;
-  margin-left: 597px;
-  margin-top: 208px;
+  left: 597px;
+  top: 238px;
+  background-image: url(assets/svg/btn-store-apple.svg);
 }
 
 .btn-market {
+  position: absolute;
   width: 188px;
   height: 50px;
-  margin-left: 30px;
+  left: 815px;
+  top: 238px;
+  background-image: url(assets/svg/btn-store-android.svg);
 }
 
 footer {
@@ -604,18 +687,27 @@ footer {
 
 
 .additional-nav li {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  /* identical to box height, or 20px */
-  color: #FFFFFF;
-  opacity: 0.98;
   display: inline-block;
   margin-right: 16px;
   padding-left: 20px;
   border-left: 1px solid gray;
+}
+
+.additional-nav li a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  /* identical to box height, or 20px */
+  color: #FFFFFF;
+  opacity: 0.98;
+  text-decoration: none;
+}
+
+.additional-nav li a:hover {
+  color: #27a3c2;
+  border-bottom: 1px solid #FFF;
 }
 
 .basement-logo {
@@ -623,14 +715,14 @@ footer {
   width: 44px;
   height: 45px;
   left: 618px;
-  top: -15px;
+  top: -13px;
 }
 
 .copyright {
   position: absolute;
   width: 170px;
   height: 20px;
-  left: 1110px;
+  left: 1111px;
   top: 0;
 
   /* body-14-reg */
