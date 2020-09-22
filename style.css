@@ -7,6 +7,8 @@ body {
   max-width: 1600px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1 {
@@ -40,7 +42,6 @@ header {
   position: absolute;
   width: 1600px;
   height: 95px;
-  left: 0px;
   top: 0px;
   z-index: 1;
 }
@@ -53,11 +54,6 @@ header {
   left: 778px;
   top: 25px;
   cursor: pointer;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  transition: .4s;
 }
 
 /***** Navigation Menu *****/
@@ -139,9 +135,6 @@ header nav ul li a:hover {
 }
 
 
-
-
-
 .your-life p {
   position: absolute;
   width: 504px;
@@ -163,7 +156,7 @@ header nav ul li a:hover {
   /* Auto Layout */
   display: flex;
   flex-direction: row;
-  padding: 15px 47px;
+  padding: 14px 47px;
 
   position: absolute;
   width: 184px;
@@ -176,10 +169,9 @@ header nav ul li a:hover {
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.78px;
   line-height: 132%;
   white-space: nowrap;
   /* or 25px */
@@ -190,8 +182,8 @@ header nav ul li a:hover {
 .btn:hover {
   /*transform: scale(0.98);
   box-shadow: 0px 2px 5px #888;*/
-  background: #009CC2;
   transition: .2s;
+  background: #009CC2;
 }
 
 .socials {
@@ -213,15 +205,16 @@ header nav ul li a:hover {
 }
 
 
-/* Rappresent  2st block */
+/******************************** 2nd block *****************************/
+
 
 .rappresent {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 842px;
-  left: 0px;
-  top: 744px;
+  margin: 0 auto;
 }
+
 .rappresent img {
   position: absolute;
   width: 407px;
@@ -267,7 +260,7 @@ header nav ul li a:hover {
 .content-block button {
   display: flex;
   flex-direction: row;
-  padding: 15px 47px;
+  padding: 14px 47px;
 
   position: absolute;
   width: 184px;
@@ -279,10 +272,9 @@ header nav ul li a:hover {
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.78px;
   line-height: 132%;
   white-space: nowrap;
   /* or 25px */
@@ -292,12 +284,16 @@ header nav ul li a:hover {
   background: #00AFDB;
 }
 
+
+
+/******************************** 3th block *****************************/
+
+
 .our-community {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 504px;
-  left: 0px;
-  top: 1586px;
+  margin: 0 auto;
   text-align: center;
   background: #F5F6F7;
 }
@@ -377,12 +373,20 @@ header nav ul li a:hover {
   background: transparent;
 }
 
+#prew:hover {
+  opacity: .5;
+}
+
 #next {
   position: relative;
   margin-right: -2px;
   float: right;
   transform: rotate(180deg);
   background: transparent;
+}
+
+#next:hover {
+  opacity: .5;
 }
 
 .count-slider-items {
@@ -455,14 +459,14 @@ header nav ul li a:hover {
   background-color: rgb(196, 196, 196);
 }
 
-/* Implement */
+/******************************** Implement block *****************************/
+
 
 .implement {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 842px;
-  left: 0px;
-  top: 2090px;
+  margin: 0 auto;
 }
 
 .implement img {
@@ -509,7 +513,7 @@ header nav ul li a:hover {
 .content-block-3 button {
   display: flex;
   flex-direction: row;
-  padding: 15px 47px;
+  padding: 14px 47px;
 
   position: absolute;
   width: 180px;
@@ -522,23 +526,25 @@ header nav ul li a:hover {
 
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.7px;
-  line-height: 145%;
+  line-height: 132%;
   white-space: nowrap;
   /* or 25px */
   text-align: center;
   color: #FFFFFF;
 }
 
+
+/******************************** Subscribe block *****************************/
+
+
 .subscribe {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 598px;
-  left: 0px;
-  top: 2932px;
+  margin: 0 auto;
   background-color: rgb(102, 102, 102);
   background-image: url(assets/img/pexels-christina-morillo.png);
 }
@@ -591,20 +597,22 @@ header nav ul li a:hover {
   height: 46px;
   left: 340px;
   top: 58px;
-  background-image: url(assets/svg/btn-submit.svg);
-}
-
-.btn-submit:hover {
   background-image: url(assets/svg/btn-submit-hover.svg);
 }
 
+.btn-submit img:hover {
+  opacity: 0;
+}
+
+
+/******************************** Subscribe block *****************************/
+
 
 .download-app {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 468px;
-  left: 0px;
-  top: 3530px;
+  margin: 0 auto;
   background: #F5F6F7;
   overflow: hidden;
 }
@@ -655,7 +663,11 @@ header nav ul li a:hover {
   height: 50px;
   left: 597px;
   top: 238px;
-  background-image: url(assets/svg/btn-store-apple.svg);
+  background-image: url(assets/svg/btn-store-apple-hover.svg);
+}
+
+.btn-store img:hover {
+  opacity: 0;
 }
 
 .btn-market {
@@ -664,15 +676,19 @@ header nav ul li a:hover {
   height: 50px;
   left: 815px;
   top: 238px;
-  background-image: url(assets/svg/btn-store-android.svg);
+  background-image: url(assets/svg/btn-store-android-hover.svg);
 }
 
+.btn-market img:hover {
+  opacity: 0;
+}
+
+
 footer {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 184px;
-  left: 0px;
-  top: 3998px;
+  margin: 0 auto;
 
   background: #000000;
 }
@@ -688,9 +704,8 @@ footer {
 
 .additional-nav li {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 17px;
   padding-left: 20px;
-  border-left: 1px solid gray;
 }
 
 .additional-nav li a {
@@ -698,7 +713,7 @@ footer {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 145%;
+  line-height: 140%;
   /* identical to box height, or 20px */
   color: #FFFFFF;
   opacity: 0.98;
@@ -708,6 +723,19 @@ footer {
 .additional-nav li a:hover {
   color: #27a3c2;
   border-bottom: 1px solid #FFF;
+}
+
+/* mnu-items-divider */
+.divider {
+
+  position: relative;
+  width: 6px;
+  height: 0px;
+  left: 61px;
+  margin-top: -10px;
+
+  border: 1px solid #4E4E4E;
+  transform: rotate(-90deg);
 }
 
 .basement-logo {
@@ -722,11 +750,11 @@ footer {
   position: absolute;
   width: 170px;
   height: 20px;
-  left: 1111px;
+  left: 1110px;
   top: 0;
 
   /* body-14-reg */
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
